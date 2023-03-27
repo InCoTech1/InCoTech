@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with LeadMark landing page.">
+    <meta name="author" content="Devcrud">
+    <title>LeadMark Landing page | Free Bootstrap 4.3.x landing page</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + LeadMark main styles -->
+	<link rel="stylesheet" href="assets/css/leadmark.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+         /* Modal (background) */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      /* Modal Content */
+      .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        width: 80%;
+        max-width: 600px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Close Button */
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      /* Feedback Form */
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      input,
+      textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 16px;
+      }
+
+      textarea {
+        height: 100px;
+      }
+
+      button[type="submit"] {
+        background-color: black;
+        color: white;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+
+      /* Icon */
+      #feedback-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      #feedback-button:hover {
+        background-color: #3e8e41;
+      }
+      
+.about-section{
+   
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.inner-container{
+    width: 100%;
+    float: center;
+    background-color: #fdfdfd;
+    padding: 1px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 14px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+ .btn1 {
+          background-color: DodgerBlue;
+          border: none;
+          color: white;
+          padding: 12px 16px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+        
+        /* Darker background on mouse-over */
+        .btn:hover {
+          background-color: RoyalBlue;
+        }
+    
+      /* Responsive */
+      @media (max-width: 425px) {
+        .modal-content {
+          margin: 10% auto;
+        }
+      }
+
+      @media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 50px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <button id="feedback-button"><i class="material-icons">feedback</i></button>
+
+        <div id="feedback-modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Feedback Form</h2>
+            <form id="feedback-form">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+        
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+        
+              <label for="feedback">Feedback:</label>
+              <textarea id="feedback" name="feedback" required></textarea>
+        
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+    <!-- page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/logos.png" alt="">
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">                     
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Lessons</a>
+                    </li>
+                   
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle ml-4 btn btn-primary btn-sm rounded" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Languages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">HTML</a>
+                          <a class="dropdown-item" href="#">C++</a>
+                          <a class="dropdown-item" href="#">Java</a>
+                          <a class="dropdown-item" href="#">PHP</a>
+                        </div>
+                      </li>
+                      
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Second Navigation -->
+
+    <!-- Page Header -->
+    <header class="header">
+        <div class="overlay">
+            <h1 class="subtitle">Atheneum of Codes</h1>
+            <h1 class="title">InCoTech</h1>  
+        </div>  
+        <div class="shape">
+            <svg viewBox="0 0 1500 200">
+                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
+            </svg>
+        </div>  
+        <div class="mouse-icon"><div class="wheel"></div></div>
+    </header>
+    <!-- End Of Page Header -->
+
+    <!-- Service Section -->
+    <section id="service" class="section pt-0">
+        <div class="container">
+          <h6 class="section-title text-center">Lessons</h6>
+          <h6 class="section-subtitle text-center mb-5 pb-3">Code languages</h6>
+      
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <small class="text-primary font-weight-bold">01</small>
+                  <h5 class="card-title mt-3">HTML</h5>
+                  <p class="mb-0">LHTML stands for HyperText Markup Language. It is a standard markup language used to create and design web pages. HTML allows web developers to structure content on a webpage using various tags and elements, such as headings, paragraphs, lists, links, images, forms, and more. HTML documents are typically viewed in web browsers, which interpret the code and display the webpage as intended. HTML is a foundational technology of the World Wide Web and is often used in conjunction with other technologies such as CSS and JavaScript to create dynamic and interactive web pages.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <small class="text-primary font-weight-bold">02</small>
+                  <h5 class="card-title mt-3">C++</h5>
+                  <p class="mb-0">C++ is a high-level programming language that is used to create operating systems, embedded systems, device drivers, video games, and other applications. It is an extension of the C programming language and includes features such as object-oriented programming, templates, and exceptions. C++ is known for its performance and efficiency, making it a popular choice for developing software that requires fast and low-level access to computer resources.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <small class="text-primary font-weight-bold">03</small>
+                  <h5 class="card-title mt-3">Java</h5>
+                  <p class="mb-0">Java is a popular object-oriented programming language used for developing a wide range of applications, from web and mobile applications to desktop and enterprise applications. Java is designed to be platform-independent, which means that Java code can run on any operating system without the need for recompilation. Java is also used for developing games, software tools, and scientific applications.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <small class="text-primary font-weight-bold">04</small>
+                  <h5 class="card-title mt-3">PHP</h5>
+                  <p class="mb-0">PHP stands for Hypertext Preprocessor. It is a server-side scripting language used primarily for web development. PHP is designed to create dynamic web pages and to interact with databases. It is free, open-source, and can run on multiple platforms, including Windows, Linux, and macOS.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    <!-- End OF Service Section -->
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <style>
+            
+        </style>
+        <div class="main1">
+        <div class="about-section">
+            <div class="inner-container">
+                <h1>About Us</h1>
+                <p class="text">
+                    The website is designed to help students and teachers learn about coding languages and their history. It offers video tutorials and example codes to make learning easy and fun. The site is perfect for both beginners and advanced programmers. It provides a historical context for each language, making it more interesting and engaging. Teachers can create custom lesson plans and track student progress, and students can use the site to learn on their own. The website is a great resource for anyone looking to learn more about coding and programming.
+                </p>
+                <div class="skills">
+                    <a href="#">
+                        <button class="btn1"><i class="	fas fa-id-card">team</i></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- End OF About Section -->
+
+    
+    
+
+    <!-- Contact Section -->
+    
+            <!-- Page Footer -->
+            <footer class="mt-5 py-4 border-top border-secondary">
+                <p class="mb-0 small">&copy; <script>document.write(new Date().getFullYear())</script>, InCoTech All rights reserved </p>     
+            </footer>
+            <!-- End of Page Footer -->  
+        </div>
+    </section>
+	<script>
+        // Get the modal
+const modal = document.getElementById("feedback-modal");
+
+// Get the button that opens the modal
+const btn = document.getElementById("feedback-button");
+
+// Get the <span> element that closes the modal
+const span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+
+// When the user submits the feedback form
+const form = document.getElementById("feedback-form");
+form.addEventListener("submit", function(event) {
+event.preventDefault();
+const name = document.getElementById("name").value;
+const email = document.getElementById("email").value;
+const feedback = document.getElementById("feedback").value;
+const subject = "Feedback from " + name;
+const body = "Email: " + email + "\nFeedback: " + feedback;
+const mailtoLink = "mailto:glitchycat46@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+window.location.href = mailtoLink;
+modal.style.display = "none";
+});
+
+    </script>
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- LeadMark js -->
+    <script src="assets/js/leadmark.js"></script>
+
+</body>
+</html>
