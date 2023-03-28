@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with LeadMark landing page.">
     <meta name="author" content="Devcrud">
-    <title>InCoTech</title>
+    <title>LeadMark Landing page | Free Bootstrap 4.3.x landing page</title>
     <!-- font icons -->
-    <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + LeadMark main styles -->
-	<link rel="stylesheet" href="css/leadmark.css">
+	<link rel="stylesheet" href="assets/css/leadmark.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <style>
@@ -161,9 +161,39 @@
         
         /* Darker background on mouse-over */
         .btn:hover {
-          background-color: #f5a961;
+          background-color:#f5a961 ;
         }
-    
+      /* Style the "See More" buttons */
+  .btn-primary1 {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+
+  .btn-primary1:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+
+  /* Style the additional information */
+  .d-none {
+    display: none;
+  }
+
+  #html-more-info {
+    color: green;
+  }
+
+  #cpp-more-info {
+    color: blue;
+  }
+
+  #java-more-info {
+    color: red;
+  }
+
+  #php-more-info {
+    color: purple;
+  }
       /* Responsive */
       @media (max-width: 425px) {
         .modal-content {
@@ -223,7 +253,7 @@
     <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="imgs/logos.png" alt="">
+                <img src="assets/imgs/logos.png" alt="">
             </a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -285,6 +315,8 @@
                   <small class="text-primary font-weight-bold">01</small>
                   <h5 class="card-title mt-3">HTML</h5>
                   <p class="mb-0">LHTML stands for HyperText Markup Language. It is a standard markup language used to create and design web pages. HTML allows web developers to structure content on a webpage using various tags and elements, such as headings, paragraphs, lists, links, images, forms, and more. HTML documents are typically viewed in web browsers, which interpret the code and display the webpage as intended. HTML is a foundational technology of the World Wide Web and is often used in conjunction with other technologies such as CSS and JavaScript to create dynamic and interactive web pages.</p>
+                  <button class="btn btn-primary1 mt-3" id="html-see-more">See More</button>
+                  <p class="d-none" id="html-more-info">“Falling in love is like holding a candle. Initially it lightens up the world around you. Then it starts melting and hurts you. Finally it goes off and everything is darker than ever and all you are left with is the…BURN!</p>
                 </div>
               </div>
             </div>
@@ -294,6 +326,9 @@
                   <small class="text-primary font-weight-bold">02</small>
                   <h5 class="card-title mt-3">C++</h5>
                   <p class="mb-0">C++ is a high-level programming language that is used to create operating systems, embedded systems, device drivers, video games, and other applications. It is an extension of the C programming language and includes features such as object-oriented programming, templates, and exceptions. C++ is known for its performance and efficiency, making it a popular choice for developing software that requires fast and low-level access to computer resources.</p>
+                  <button class="btn btn-primary1 mt-3" id="cpp-see-more">See More</button>
+                  <p class="d-none" id="cpp-more-info">
+                    “The most painful thing is losing yourself in the process of loving someone too much, and forgetting that you are special too.” </p>
                 </div>
               </div>
             </div>
@@ -303,6 +338,8 @@
                   <small class="text-primary font-weight-bold">03</small>
                   <h5 class="card-title mt-3">Java</h5>
                   <p class="mb-0">Java is a popular object-oriented programming language used for developing a wide range of applications, from web and mobile applications to desktop and enterprise applications. Java is designed to be platform-independent, which means that Java code can run on any operating system without the need for recompilation. Java is also used for developing games, software tools, and scientific applications.</p>
+                  <button class="btn btn-primary1 mt-3" id="java-see-more">See More</button>
+                  <p class="d-none" id="java-more-info"> “There are wounds that never show on the body that are deeper and more hurtful than anything that bleeds.” </p>
                 </div>
               </div>
             </div>
@@ -311,10 +348,40 @@
                 <div class="card-body">
                   <small class="text-primary font-weight-bold">04</small>
                   <h5 class="card-title mt-3">PHP</h5>
-                  <p class="mb-0">PHP stands for Hypertext Preprocessor. It is a server-side scripting language used primarily for web development. PHP is designed to create dynamic web pages and to interact with databases. It is free, open-source, and can run on multiple platforms, including Windows, Linux, and macOS.</p>
-                </div>
-              </div>
-            </div>
+                  <p class="mb-0">PHP stands for Hypertext Preprocessor. It is a server-side scripting language used to create dynamic web pages and web applications. PHP code is embedded in HTML code and is executed on the server before the HTML is sent to the client's web browser. PHP can connect to databases, manipulate files on the server, and perform other server-side tasks. It is widely used in content management systems, such as WordPress and Drupal, and in e-commerce platforms, such as Magento and WooCommerce.</p>
+                    <button class="btn btn-primary1 mt-3" id="php-see-more">See More</button>
+                    <p class="d-none" id="php-more-info">“Some old wounds never truly heal, and bleed again at the slightest word.”</p>
+                    </div>
+                    </div>
+                    
+                      </div>
+                    </div>
+                    <script>
+                      // Add event listeners to the "See More" buttons to toggle the display of the additional information
+                      const htmlSeeMoreButton = document.getElementById('html-see-more');
+                      const htmlMoreInfo = document.getElementById('html-more-info');
+                      htmlSeeMoreButton.addEventListener('click', () => {
+                        htmlMoreInfo.classList.toggle('d-none');
+                      });
+                    
+                      const cppSeeMoreButton = document.getElementById('cpp-see-more');
+                      const cppMoreInfo = document.getElementById('cpp-more-info');
+                      cppSeeMoreButton.addEventListener('click', () => {
+                        cppMoreInfo.classList.toggle('d-none');
+                      });
+                    
+                      const javaSeeMoreButton = document.getElementById('java-see-more');
+                      const javaMoreInfo = document.getElementById('java-more-info');
+                      javaSeeMoreButton.addEventListener('click', () => {
+                        javaMoreInfo.classList.toggle('d-none');
+                      });
+                    
+                      const phpSeeMoreButton = document.getElementById('php-see-more');
+                      const phpMoreInfo = document.getElementById('php-more-info');
+                      phpSeeMoreButton.addEventListener('click', () => {
+                        phpMoreInfo.classList.toggle('d-none');
+                      });
+                    </script>
           </div>
         </div>
         
@@ -399,17 +466,17 @@ modal.style.display = "none";
 
     </script>
 	<!-- core  -->
-    <script src="vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
     <!-- bootstrap 3 affix -->
-	<script src="vendors/bootstrap/bootstrap.affix.js"></script>
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
     <!-- Isotope -->
-    <script src="vendors/isotope/isotope.pkgd.js"></script>
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
 
     <!-- LeadMark js -->
-    <script src="js/leadmark.js"></script>
+    <script src="assets/js/leadmark.js"></script>
 
 </body>
 </html>
