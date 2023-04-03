@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tutorial Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/htmlstyle.css">
+  <style>
+    body {
+      background-color: #f4f4f4;
+      
+    }
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin: 20px 0;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px; height: 0; overflow: hidden;
+    }
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    pre {
+      font-size: 16px;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #f5f5f5;
+      padding: 20px;
+      overflow: auto;
+      border-radius: 5px;
+    }
+    
+    .code-scroll {
+    background-color: black;
+    color: white;
+    overflow: auto;
+    padding: 10px;
+    max-height: 200px; /* set maximum height to allow scrolling */
+    }
+    .code-scroll pre {
+    margin: 0; /* remove default margins */
+  }
+  .preview-link {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.preview-link:hover {
+  background-color: #0069d9;
+}
+
+.preview-link:active {
+  background-color: #0053a3;
+}
+  </style>
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#"><img src="assets/imgs/logos.png" alt="InCoTech logo" style="max-height: 50px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i></a>
+        <li class="nav-item">
+          <a class="nav-link" href="html.html"><i class="fab fa-html5"></i> HTML</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="php.html"><i class="fab fa-php"></i> PHP</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="C.html"><i class="fab fa-cuttlefish"></i> C++</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="java.html"><i class="fab fa-java"></i> Java</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+         
+		<section>
+			<h2>Tutorial of HTML</h2>
+			<p>HTML, which stands for HyperText Markup Language, is the standard language used to create web pages. HTML is used to create the structure and content of a web page, including headings, paragraphs, images, links, and more.</p>
+
+        <p>To start creating your own HTML page, you will need a text editor like Notepad, Sublime Text, or Visual Studio Code. Once you have a text editor, you can start coding!</p>
+        
+        <p>Here are the basic steps to create an HTML page:</p>
+        
+        <p>Open your text editor and create a new file.</p>
+       <p> Type the following code:</p>
+			<div class="container">
+       
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <video src="assets/imgs/code.mp4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls></video>
+        </div>
+          </div>
+		</section>
+
+		<section>
+			<h2>HTML Basics</h2>
+			
+			<div class="code-scroll">
+				<pre>
+          &lt;!DOCTYPE html&gt;
+          &lt;html&gt;
+            &lt;head&gt;
+              &lt;title&gt;Your Title Here&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+          
+            &lt;/body&gt;
+          &lt;/html&gt;
+          
+				</pre>
+			</div>
+      <p>This code sets up the basic structure of your web page. The &lt;!DOCTYPE html&gt; tag tells the browser that this is an HTML document. The &lt;html&gt; tag wraps around the entire document, while the &lt;head&gt; and &lt;body&gt; tags divide the document into two parts. The &lt;title&gt; tag sets the title of your web page, which will be displayed in the browser's title bar.
+      Now it's time to add some content to your page. Within the &lt;body&gt; tags, you can add any of the following HTML tags to structure your content:</p>
+      <p>&lt;h1&gt; to &lt;h6&gt; for headings</p>
+<p>&lt;p&gt; for paragraphs</p>
+<p>&lt;a&gt; for links</p>
+<p>&lt;img&gt; for images</p>
+<p>&lt;ul&gt; and &lt;li&gt; for unordered lists</p>
+<p>&lt;ol&gt; and &lt;li&gt; for ordered lists</p>
+<p>Here's an example of how you can add a heading, paragraph, and image to your page:</p>
+<div class="code-scroll">
+  <pre>
+    &lt;html&gt;
+    &lt;body&gt;
+      &lt;h1&gt;Welcome to my Web Page&lt;/h1&gt;
+      &lt;p&gt;This is my first web page. I'm excited to learn more about HTML!&lt;/p&gt;
+      &lt;img src="your-image-url-here" alt="Image Description"&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+  
+  </pre>
+</div>
+<p>Save your file with a .html extension, such as "index.html".</p>
+
+<p>Open your web browser and navigate to the file you just created. You can do this by selecting "Open File" from the browser's menu and selecting your file.</p>
+
+<p>Voila! You've created your first HTML web page.</p>
+
+<p>Of course, this is just a basic overview of HTML. There are many more HTML tags and attributes you can use to create complex web pages. I recommend checking out some online resources, such as w3schools.com, to learn more.</p>
+
+<p>I hope this tutorial helps you get started with HTML! Let me know if you have any questions or if there's anything else I can help you with.</p>
+
+		</section>
+	</main>
+</div>
+            </div>
+          </div>
+          
+          <button id="preview-btn"><a class="preview-link">Preview</a></button>
+          
+<script>
+  const previewBtn = document.getElementById('preview-btn');
+previewBtn.addEventListener('click', () => {
+  // Get the current URL and save it to local storage
+  localStorage.setItem('previous-url', window.location.href);
+  // Open the preview page in a new tab
+  window.open('html.html');
+});
+const previousUrl = localStorage.getItem('previous-url');
+if (previousUrl) {
+  // Remove the URL from local storage
+  localStorage.removeItem('previous-url');
+  // Navigate back to the previous page
+  window.location.href = previousUrl;
+}
+
+</script>
+          <footer style="background-color: #f4f4f4; padding: 10px; text-align: center;">
+            <p style="color: #888;">InCoTech &copy; 2023. All rights reserved.</p>
+          </footer>
+          
+    <!-- Link to jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- Link to Bootstrap JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
