@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>C++</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/htmlstyle.css">
+
+  
+</head>
+
+<body>
+  <!-- Navigation bar -->
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="#"><img src="assets/imgs/logos.png" alt="InCoTech logo" style="max-height: 50px;"></a>
+
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i></a>
+        <li class="nav-item">
+          <a class="nav-link" href="html.html"><i class="fab fa-html5"></i> HTML</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="php.html"><i class="fab fa-php"></i> PHP</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="C.html"><i class="fab fa-cuttlefish"></i> C++</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="java.html"><i class="fab fa-java"></i> Java</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Side navigation -->
+      <div class="col-lg-3 col-md-4 d-none d-md-block">
+        <div class="sidenav">
+          <a href="#Introduction">Introduction</a>
+          <a href="#History">History</a>
+          <a href="#Elements">Elements</a>
+          <a href="#Features">Features</a>
+          <a href="ctot.html">Tutorials</a>
+        </div>
+      </div>
+              <!-- Main content -->
+              <div class="col-lg-9 col-md-8">
+                <div class="main">
+                  <section class="section" id="Introduction">
+                    <h1>C++</h1>
+                    <h2>Introduction</h2>
+                    <p>C++ is a high-level, general-purpose programming language that was developed in the early 1980s by Bjarne Stroustrup at Bell Labs. It is an extension of the C programming language and is designed to allow developers to write high-level code that can run efficiently on a wide range of hardware platforms.</p>
+<p>C++ is an object-oriented programming language, which means that it is based on the concept of objects and classes. It allows developers to create complex, modular programs by breaking down their code into smaller, reusable components. This makes it easy to write and maintain code, as well as reuse existing code.</p>
+<p>C++ is also a compiled language, which means that the code is compiled into machine code that can be executed directly by the computer's hardware. This makes it fast and efficient, and it is commonly used for performance-critical applications such as video games, operating systems, and scientific simulations.</p>
+<p>One of the key features of C++ is its support for low-level programming. It provides direct access to the computer's hardware through features such as pointers, which allow developers to manipulate memory directly. This can be both a blessing and a curse, as it allows for fine-grained control over the system but can also lead to hard-to-find bugs if not used carefully.</p>
+<p>C++ also has a large and active community of developers who contribute to its development and provide support and resources for other developers. It is used by a wide range of industries, including finance, aerospace, and automotive, and is one of the most popular programming languages in the world.</p>
+                    
+                  </section>
+                  <hr style="border: 1px solid black;">
+                  <div style="height: 100px;"></div> <!-- Add some space between sections -->
+                  <!--video-->
+                  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                    <video src="assets/imgs/code.mp4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls></video>
+                  </div>
+                  <div style="height: 100px;"></div> <!-- Add some space between sections -->
+                  <hr style="border: 1px solid black;">
+                  <section class="section" id="History">
+                  
+                    <h2>History</h2>
+                    <p>C++ was created in the early 1980s by Bjarne Stroustrup, a Danish computer scientist who was working at Bell Labs at the time. He needed a programming language that could handle the complex, low-level tasks required by the operating system while still providing a high-level, object-oriented interface for developers. C was the most popular programming language for systems programming at the time, but it lacked support for object-oriented programming. Stroustrup decided to create a new programming language that would combine the simplicity and efficiency of C with the object-oriented features of Simula. The result was C++, which was first released in 1983 as a set of extensions to the C programming language.</p>
+<p>C++ gained popularity as a programming language for systems programming, as well as for developing high-performance applications such as video games and scientific simulations. In 1989, the first edition of "The C++ Programming Language," a book written by Stroustrup, was published, which helped to popularize the language even further.</p>
+<p>In the 1990s, C++ continued to evolve, with the release of the first ANSI/ISO C++ standard in 1998. This standard defined the core features of the language and ensured that C++ code would be portable across different hardware platforms and compilers.</p>
+<p>Today, C++ remains one of the most popular programming languages in the world, with a large and active community of developers who continue to improve and expand the language. It is used in a wide range of industries, including finance, aerospace, and automotive, and is still one of the best languages for systems programming and high-performance applications.</p>
+                  </section>
+                  <hr style="border: 1px solid black;">
+                  <section class="section" id="Elements">
+                    <h2>elements</h2>
+                    <p>1. Data Types: C++ provides a wide range of data types, including primitive types (such as int, float, double, and bool), as well as user-defined types (such as structures and classes).</p>
+                    <p>2. Variables: In C++, variables are used to store data values that can be accessed and manipulated by the program. Variables can be defined with various data types, and can be initialized with an initial value.</p>
+                    <p>3. Functions: Functions are a fundamental part of C++ programming, and are used to group code that performs a specific task. Functions can take parameters and return values, making them versatile and useful for a wide range of programming tasks.</p>
+                    <p>4. Control Structures: C++ provides a variety of control structures, including loops (such as for and while loops), conditional statements (such as if-else statements), and switch statements. These structures allow developers to control the flow of program execution based on various conditions.</p>
+                    <p>5. Pointers: Pointers are variables that hold the memory address of another variable. They are a powerful tool in C++ programming, as they allow developers to manipulate memory directly and to create complex data structures.</p>
+                    <p>6. Arrays: Arrays are a collection of elements of the same data type, stored in contiguous memory locations. They are commonly used in C++ programming to store and manipulate large amounts of data.</p>
+                    <p>7. Classes: Classes are user-defined data types that encapsulate data and the functions that operate on that data. Classes are a powerful feature of C++, as they allow developers to create complex data structures and to model real-world objects in their programs.</p>
+                    <p>8. Inheritance: Inheritance is a key concept in object-oriented programming, and allows developers to create new classes that inherit the properties and functions of existing classes. This makes it possible to reuse code and to create complex hierarchies of related classes.</p>
+                    <p>9. Templates: Templates are a feature of C++ that allow developers to create generic functions and classes that can be used with a wide range of data types. Templates are useful for creating reusable code that can be adapted to a variety of programming tasks.</p>
+                    <p>10. Standard Template Library (STL): The STL is a collection of powerful data structures and algorithms that are built into the C++ language. The STL provides a range of containers (such as vectors, lists, and maps) and algorithms (such as sorting and searching) that make it easy to write efficient and scalable code.</p>
+                  </section>
+                  <hr style="border: 1px solid black;">
+                  <section class="section" id="Features">
+                    <h2>Features</h2>
+                    <ol>
+                        <li>Object-Oriented Programming: C++ is an object-oriented programming language, which means that it allows developers to create classes and objects to model real-world entities and concepts. This makes it possible to write code that is easier to understand, maintain, and extend over time.</li>
+                        <li>Strong Typing: C++ is a strongly typed language, which means that it requires variables to be explicitly declared with a data type before they can be used. This helps to catch errors early in the development process and ensures that programs are more robust and reliable.</li>
+                        <li>Low-Level Memory Manipulation: C++ provides developers with low-level access to memory, which allows them to manipulate memory directly and create complex data structures. This makes it possible to write code that is more efficient and scalable than other high-level languages.</li>
+                        <li>Compiled Language: C++ is a compiled language, which means that code is compiled into machine code before it is executed. This makes it possible to write code that is faster and more efficient than interpreted languages like Python and JavaScript.</li>
+                        <li>Platform-Independent: C++ code can be compiled and run on a wide range of platforms, including Windows, macOS, Linux, and embedded systems. This makes it a popular choice for developing cross-platform applications and systems.</li>
+                        <li>Rich Standard Library: C++ provides a rich standard library that includes a wide range of data structures, algorithms, and functions. This makes it easier for developers to write efficient and scalable code without having to reinvent the wheel.</li>
+                        <li>Operator Overloading: C++ allows developers to overload operators, which means that they can define how operators like +, -, and * behave when used with custom data types. This makes it possible to write code that is more expressive and intuitive.</li>
+                        <li>Templates: C++ supports templates, which allows developers to write generic code that can be used with a wide range of data types. This makes it possible to write code that is more reusable and adaptable to different situations.</li>
+                        <li>Exception Handling: C++ provides built-in exception handling, which makes it possible to write code that can gracefully recover from errors and continue running. This makes it easier to write robust and reliable code.</li>
+                        <li>Multi-Paradigm Language: C++ is a multi-paradigm language, which means that it supports a variety of programming styles, including procedural, object-oriented, and functional programming. This makes it a versatile language that can be used in a wide range of programming contexts.</li>
+                    </ol>
+                  </section>
+                </div>
+              </div>
+              
+              <footer style="background-color: #f4f4f4; padding: 10px; text-align: center;">
+                <p style="color: #888;">InCoTech &copy; 2023. All rights reserved.</p>
+              </footer>
+              
+              
+            
+              
+          <!-- Link to jQuery -->
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+          <!-- Link to Bootstrap JavaScript -->
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        </body>
+        </html>
