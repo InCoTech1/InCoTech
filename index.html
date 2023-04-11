@@ -7,13 +7,14 @@
     <meta name="author" content="Devcrud">
     <title>InCoTech</title>
     <!-- font icons -->
-    <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + LeadMark main styles -->
-	<link rel="stylesheet" href="css/leadmark.css">
+	<link rel="stylesheet" href="assets/css/leadmark.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <style>
          /* Modal (background) */
+
     .modal {
         display: none;
         position: fixed;
@@ -37,6 +38,30 @@
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       }
+      body.modal-open {
+    overflow: hidden;
+}
+
+      #feedback-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
 /* Style for the cards */
 .card {
   border: none;
@@ -284,6 +309,7 @@
 }
     </style>
 </head>
+<!--Feedback form-->
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     
     <button id="feedback-button"><i class="material-icons">feedback</i></button>
@@ -308,39 +334,86 @@
         </div>
     <!-- page Navigation -->
     <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="imgs/logos.png" alt="">
-            </a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">                     
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
-                    </li>
-                    
-                    
-                   <li class="nav-item">
-  <a class="nav-link ml-4 btn btn-primary btn-sm rounded" href="#service">
-    Languages
-  </a>
-</li>
-                      
-                </ul>
-            </div>
-        </div>
-    </nav>
+      <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="assets/imgs/logo1.png" alt="" style="max-height: 150px; max-width: 300px;">
+          </a>
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">                     
+                  
+                  <li class="nav-item">
+                      <a class="nav-link" href="#about">About Us</a>
+                  </li>
+                  
+                  
+                  <li class="nav-item">
+                    <a class="nav-link ml-4 btn btn-primary btn-sm rounded" href="#service">Languages</a>
+                  </li>
+                  
+                        
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
     <!-- End Of Second Navigation -->
 
     <!-- Page Header -->
     <header class="header">
         <div class="overlay">
-            <h1 class="subtitle">Atheneum of Codes</h1>
-            <h1 class="title">InCoTech</h1>  
-        </div>  
+  <h1 class="subtitle"></h1>
+  <h1 class="title">InCoTech</h1>
+</div>
+
+<script>
+  const subtitle = document.querySelector(".subtitle");
+
+  const subtitleText = "Atheneum of Codes";
+  const animateDuration = 2000;
+  const deleteDuration = 1000;
+  const pauseDuration = 1000;
+
+  const type = (element, text, done) => {
+    let index = 0;
+    const interval = setInterval(() => {
+      element.textContent += text[index];
+      index++;
+      if (index === text.length) {
+        clearInterval(interval);
+        if (done) done();
+      }
+    }, 100);
+  };
+
+  const deleteType = (element, done) => {
+    const text = element.textContent;
+    const interval = setInterval(() => {
+      element.textContent = text.slice(0, -1);
+      if (element.textContent === "") {
+        clearInterval(interval);
+        if (done) done();
+      }
+    }, 50);
+  };
+
+  const animateSubtitle = () => {
+    type(subtitle, subtitleText, () => {
+      setTimeout(() => {
+        deleteType(subtitle, () => {
+          setTimeout(() => {
+            animateSubtitle();
+          }, pauseDuration);
+        });
+      }, animateDuration);
+    });
+  };
+
+  animateSubtitle();
+</script>
+
         <div class="shape">
             <svg viewBox="0 0 1500 200">
                 <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
@@ -373,7 +446,7 @@
                 <small class="text-primary font-weight-bold">02</small>
                 <h5 class="card-title mt-3">C++</h5>
                 <p class="mb-0">C++ is a high-level programming language that is used to create operating systems, embedded systems, device drivers, video games, and other applications. It is an extension of the C programming language and includes features such as object-oriented programming, templates, and exceptions. C++ is known for its performance and efficiency, making it a popular choice for developing software that requires fast and low-level access to computer resources.</p>
-                <button class="btn btn-primary1 mt-3" onclick="window.location.href='C.html'">See More</button>
+                <button class="btn btn-primary1 mt-3" onclick="window.location.href='c.html'">See More</button>
               </div>
             </div>
           </div>
@@ -407,11 +480,21 @@
     <!-- About Section -->
     <section class="section" id="about">
         <style>
-            
+          .about-image {
+  width: 300px; /* Adjust the width to your desired size */
+  height: auto;
+  float: right; /* Adjust the position to your desired position */
+  margin: 0 0 20px 20px; /* Adjust the margin to your desired position */
+
+}
+
+
         </style>
         <div class="main1">
         <div class="about-section">
             <div class="inner-container">
+              <img src="assets/imgs/classmate1.jpg" alt="Your photo description here" class="about-image">
+
                 <h1>About Us</h1>
                 <p class="text">
                     The website is designed to help students and teachers learn about coding languages and their history. It offers video tutorials and example codes to make learning easy and fun. The site is perfect for both beginners and advanced programmers. It provides a historical context for each language, making it more interesting and engaging. Teachers can create custom lesson plans and track student progress, and students can use the site to learn on their own. The website is a great resource for anyone looking to learn more about coding and programming.
@@ -482,14 +565,14 @@ modal.style.display = "none";
 
     </script>
 	<!-- core  -->
-    <script src="vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
     <!-- bootstrap 3 affix -->
-	<script src="vendors/bootstrap/bootstrap.affix.js"></script>
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
     <!-- Isotope -->
-    <script src="vendors/isotope/isotope.pkgd.js"></script>
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
 
     <!-- LeadMark js -->
     <script src="assets/js/leadmark.js"></script>
