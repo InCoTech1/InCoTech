@@ -1,17 +1,5 @@
 @charset "UTF-8";
-/*!
-=========================================================
-* LeadMark Landing page
-=========================================================
 
-* Copyright: 2019 DevCRUD (https://devcrud.com)
-* Licensed: (https://devcrud.com/licenses)
-* Coded by www.devcrud.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 :root {
   --blue: #007bff;
@@ -560,6 +548,10 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+inner-container {
+  width: 100%;
+  max-width: 600px;
 }
 
 @media (min-width: 576px) {
@@ -1185,6 +1177,7 @@ pre code {
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
     max-width: 50%;
+    text-align: justify;
   }
   .col-md-7 {
     -webkit-box-flex: 0;
@@ -11497,7 +11490,7 @@ textarea.form-control {
 .header.components-header {
   max-height: 450px !important;
   height: 450px;
-  dispaly: none;
+  display: none;
   background-position: center -140px;
 }
 
@@ -11548,7 +11541,7 @@ textarea.form-control {
 }
 
 .section:nth-child(even) {
-  background-image: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url('classmate1.jpg');
+  
     background-position: center;
     background-size: cover;
     
