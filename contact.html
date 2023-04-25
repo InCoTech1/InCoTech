@@ -7,29 +7,66 @@
     <link rel="stylesheet" href="css/style3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <style>
+        /* Styles for the back button */
         .back-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 18px;
-  text-decoration: none;
-}
-
-.back-button:hover {
-  background-color: #0062cc;
-}
-
-.back-button a {
-  color: #fff;
-  text-decoration: none;
-}
-
-    </style>
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 999;
+          background-color: #007bff;
+          color: #fff;
+          padding: 10px 20px;
+          border-radius: 5px;
+          font-size: 18px;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+        }
+      
+        .back-button:hover {
+          background-color: #0062cc;
+        }
+      
+        .back-button a {
+          color: #fff;
+          text-decoration: none;
+        }
+      
+        /* Styles for highlighting the person */
+        .person p {
+          position: relative;
+          z-index: 1;
+          transition: color 0.3s ease;
+        }
+      
+        .person p:hover {
+          color: white;
+        }
+      
+        .person p::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+      
+        .person p:hover::before {
+          opacity: 1;
+        }
+        .highlight {
+        background-color: #90ee90;
+        color: white;
+        padding: 0.2em 0.4em;
+        border-radius: 0.25em;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+    
+      </style>
 </head>
 <body>
     
@@ -43,135 +80,85 @@
         <div class="person">
             <img src="imgs/pia.jpg" alt="" class="person-pic">
             <div class="person-info">
-                <h2>Princess Sophia Canilang</h2>
+                <h2 class="highlight">Princess Sophia Canilang</h2>
                 <p>princesscanilang21@gmail.com</p>
-                <div class="socialmedia">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+                
             </div>
         </div>
 
         <div class="person">
             <img src="imgs/bayaban.jpg" alt="" class="person-pic">
             <div class="person-info">
-                <h2>Aldren Bayaban</h2>
+                <h2 class="highlight">Aldren Bayaban</h2>
                 <p>aldrenbayaban46@gmail.com</p>
-                <div class="socialmedia">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+                
             </div>
         </div>
 
         <div class="person">
             <img src="imgs/ey.jpg" alt="" class="person-pic">
             <div class="person-info">
-                <h2>Rodel torrecampo</h2>
+                <h2 class="highlight">Rodel torrecampo</h2>
                 <p>rodeltorrecampo16@gmail.com</p>
-                <div class="socialmedia">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+                
             </div>
         </div>
 
         <div class="person">
             <img src="imgs/gascon.jpg" alt="" class="person-pic">
             <div class="person-info">
-                <h2>Justine gascon</h2>
+                <h2 class="highlight">Justine gascon</h2>
                 <p>justinegascon0909@gmail.com</p>
-                <div class="socialmedia">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+               
             </div>
         </div>
 		<div class="person">
             <img src="imgs/coloma.jpg" alt="" class="person-pic">
             <div class="person-info">
-                <h2>Paul Vincent D. Coloma</h2>
+                <h2 class="highlight">Paul Vincent D. Coloma</h2>
                 <p>xxadiegoo@gmail.com</p>
-                <div class="socialmedia">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+                
             </div>
         </div>
 		<div class="person">
             <img src="imgs/lhaira.jpg" alt="" class="person-pic">
             <div class="person-info">
-                <h2>Zornosa lhaira</h2>
+                <h2 class="highlight">Zornosa lhaira</h2>
                 <p>zornosalhaira@gmail.com</p>
-                <div class="socialmedia">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+               
             </div>
         </div>
 		<div class="person">
             <img src="imgs/jarapan.jpg" alt="" class="person-pic">
             <div class="person-info">
-                <h2>Angela fay jarapan</h2>
+                <h2 class="highlight">Angela fay jarapan</h2>
                 <p>angelafayjarapan@gmail.com</p>
-                <div class="socialmedia">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+                
             </div>
         </div>
 		<div class="person">
             <img src="imgs/josses.jpg" alt="" class="person-pic">
             <div class="person-info">
-                <h2>Josses Jimenez</h2>
+                <h2 class="highlight">Josses Jimenez</h2>
                 <p>jossesjimenez1@gmail.com</p>
-                <div class="socialmedia">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+                
             </div>
         </div>
 		<div class="person">
             <img src="imgs/loyd.jpg" alt="" class="person-pic">
             <div class="person-info">
-                <h2>Johnlloyd Entera</h2>
+                <h2 class="highlight">Johnlloyd Entera</h2>
                 <p>johnlloydentera14@gmail.com</p>
-                <div class="socialmedia">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+               
             </div>
         </div>
     </div>
 	<div class="person">
             <img src="imgs/enero.jpg" alt="" class="person-pic">
             <div class="person-info">
-                <h2>Ronnie Edelbert Enero</h2>
+                <h2 class="highlight">Ronnie Edelbert Enero</h2>
                 <p>ronnieenero@gmail.com</p>
-                <div class="socialmedia">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+                
             </div>
         </div>
 </body>
