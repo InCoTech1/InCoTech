@@ -335,29 +335,35 @@
     <!-- page Navigation -->
     <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
       <div class="container">
-          <a class="navbar-brand" href="#">
-              <img src="imgs/logo1.png" alt="" style="max-height: 150px; max-width: 300px;">
-          </a>
-          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">                     
-                  
-                  <li class="nav-item">
-                      <a class="nav-link" href="#about">About Us</a>
-                  </li>
-                  
-                  
-                  <li class="nav-item">
-                    <a class="nav-link ml-4 btn btn-primary btn-sm rounded" href="#service">Languages</a>
-                  </li>
-                  
-                        
-              </ul>
-          </div>
+        <a class="navbar-brand" href="#">
+          <img src="imgs/logo1.png" alt="" style="max-height: 200px; max-width: 300px;">
+        </a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">                     
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle ml-4 btn btn-primary btn-sm rounded" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Lessons
+              </a>
+              
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="html.html">HTML</a>
+                <a class="dropdown-item" href="java.html">Java</a>
+                <a class="dropdown-item" href="php.html">PHP</a>
+                <a class="dropdown-item" href="C.html">C++</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+          </ul>
+        </div>
       </div>
-  </nav>
+    </nav>
+    
+    
   
     <!-- End Of Second Navigation -->
 
@@ -367,7 +373,11 @@
   <h1 class="subtitle"></h1>
   <h1 class="title">InCoTech</h1>
 </div>
-
+<style>
+  .subtitle {
+    font-size: 10rem; /* Adjust this value to change the font size */
+  }
+  </style>
 <script>
   const subtitle = document.querySelector(".subtitle");
 
@@ -423,59 +433,7 @@
     </header>
     <!-- End Of Page Header -->
 
-    <!-- Service Section -->
-    <section id="service" class="section pt-0">
-      <div class="container">
-        <h6 class="section-title text-center">Lessons</h6>
-        <h6 class="section-subtitle text-center mb-5 pb-3">Code languages</h6>
-    
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card mb-4">
-              <div class="card-body">
-                <small class="text-primary font-weight-bold">01</small>
-                <h5 class="card-title mt-3">HTML</h5>
-                <p class="mb-0">LHTML stands for HyperText Markup Language. It is a standard markup language used to create and design web pages. HTML allows web developers to structure content on a webpage using various tags and elements, such as headings, paragraphs, lists, links, images, forms, and more. HTML documents are typically viewed in web browsers, which interpret the code and display the webpage as intended. HTML is a foundational technology of the World Wide Web and is often used in conjunction with other technologies such as CSS and JavaScript to create dynamic and interactive web pages.</p>
-                <button class="btn btn-primary1 mt-3" onclick="window.location.href='html.html'">See More</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card mb-4">
-              <div class="card-body">
-                <small class="text-primary font-weight-bold">02</small>
-                <h5 class="card-title mt-3">C++</h5>
-                <p class="mb-0">C++ is a high-level programming language that is used to create operating systems, embedded systems, device drivers, video games, and other applications. It is an extension of the C programming language and includes features such as object-oriented programming, templates, and exceptions. C++ is known for its performance and efficiency, making it a popular choice for developing software that requires fast and low-level access to computer resources.</p>
-                <button class="btn btn-primary1 mt-3" onclick="window.location.href='C.html'">See More</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card mb-4">
-              <div class="card-body">
-                <small class="text-primary font-weight-bold">03</small>
-                <h5 class="card-title mt-3">Java</h5>
-                <p class="mb-0">Java is a popular object-oriented programming language used for developing a wide range of applications, from web and mobile applications to desktop and enterprise applications. Java is designed to be platform-independent, which means that Java code can run on any operating system without the need for recompilation. Java is also used for developing games, software tools, and scientific applications.</p>
-                <button class="btn btn-primary1 mt-3" onclick="window.location.href='java.html'">See More</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card mb-4">
-              <div class="card-body">
-                <small class="text-primary font-weight-bold">04</small>
-                <h5 class="card-title mt-3">PHP</h5>
-                <p class="mb-0">PHP stands for Hypertext Preprocessor. It is
-                  a server-side scripting language that is used to create dynamic web pages and web applications. PHP is a popular language for web development because it can be embedded directly into HTML code and can interact with a wide range of databases, making it easy to create dynamic and interactive websites. PHP is used for a variety of purposes, from e-commerce websites to social media platforms and content management systems.</p>
-                  <button class="btn btn-primary1 mt-3" onclick="window.location.href='php.html'">See More</button>
-                  </div>
-                  </div>
-                  </div>
-                  </div>
-                  
-                    </div>
-                  </section>    
-    <!-- End OF Service Section -->
+   
 
     <!-- About Section -->
     <section class="section" id="about">
@@ -488,12 +446,34 @@
 
 }
 
+.main1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
 
+    .about-section {
+        text-align: center;
+    }
+
+    .text {
+        padding: 1em;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .about-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
         </style>
         <div class="main1">
         <div class="about-section">
             <div class="inner-container">
-              <img src="imgs/classmate1.jpg" alt="Your photo description here" class="about-image">
+            
 
                 <h1>About Us</h1>
                 <p class="text">
