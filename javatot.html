@@ -12,7 +12,6 @@
       background-color: #f4f4f4;
       
     }
-	   
     h1 {
       text-align: center;
       margin-top: 50px;
@@ -81,46 +80,58 @@
 </head>
 <body>
   <!-- Navigation bar -->
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <a class="navbar-brand" href="index.html"><img src="imgs/logo1.png" alt="InCoTech logo" style="max-height: 50px;"></a>
+
+      
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i></a>
-        <li class="nav-item">
-          <a class="nav-link" href="html.html"><i class="fab fa-html5"></i> HTML</a>
+       
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="html.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fab fa-html5"></i> HTML</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="html.html">Introduction</a>
+            <a class="dropdown-item" href="htmlelement.html">Elements</a>
+            <a class="dropdown-item" href="htmlto.html">Tutorials</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="php.html"><i class="fab fa-php"></i> PHP</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fab fa-php"></i> PHP</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="php.html">Introduction</a>
+            <a class="dropdown-item" href="phpelement.html">Elements</a>
+            <a class="dropdown-item" href="phptot.html">Tutorials</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="C.html"><i class="fab fa-cuttlefish"></i> C++</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fab fa-cuttlefish"></i> C++</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="C.html">Introduction</a>
+            <a class="dropdown-item" href="celement.html">Elements</a>
+            <a class="dropdown-item" href="ctot.html">Tutorials</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="java.html"><i class="fab fa-java"></i> Java</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fab fa-java"></i> Java</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="java.html">Introduction</a>
+            <a class="dropdown-item" href="javaelement.html">Elements</a>
+            <a class="dropdown-item" href="javatot.html">Tutorials</a>
+          </div>
         </li>
       </ul>
     </div>
   </nav>
-        <div class="container-fluid">
-    <div class="row">
-      <!-- Side navigation -->
-      <div class="col-lg-3 col-md-4 d-none d-md-block">
-        <div class="sidenav">
-          <a href="java.html">Introduction</a>
-          <a href="java.html">History</a>
-          <a href="java.html">Elements</a>
-          <a href="java.html">Features</a>
-          
-        </div>
-      </div>
-      <div class="col-lg-9 col-md-8">
-        <div class="main">      
+  
+  <div class="content" style="margin-top: 100px;">
+    <div class="col-lg-9 col-md-8 mx-auto">
+      <div class="main text-justify">
 		<section>
 			<h2>Tutorial of Java</h2>
-			<main>
+			
             <p>1. import java.util.Scanner;: This line imports the Scanner class from the java.util package, which provides a way to read input from the user.</p>
             <p>2. public class Greeting {: This line declares a public class called Greeting. The name of the class must match the name of the file (in this case, Greeting.java).</p>
             <p>3. &nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args) {: This line declares a main method, which is the entry point for the program. It takes an array of String arguments (args) as input, although we're not using them in this example.</p>
@@ -131,7 +142,7 @@
 			<div class="container">
        
         <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-          <video src="imgs/java.mp4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls></video>
+          <video src="assets/imgs/java.mp4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls></video>
         </div>
           </div>
 		</section>
@@ -190,7 +201,7 @@
             </div>
           </div>
           
-          <button id="preview-btn"><a class="preview-link">Preview</a></button>
+         
           
 <script>
   const previewBtn = document.getElementById('preview-btn');
