@@ -12,7 +12,9 @@
       background-color: #f4f4f4;
       
     }
-	   
+    main {
+    margin-left: 200px; /* Change the value as per your requirement */
+  }
     h1 {
       text-align: center;
       margin-top: 50px;
@@ -81,138 +83,154 @@
 </head>
 <body>
   <!-- Navigation bar -->
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <a class="navbar-brand" href="index.html"><img src="imgs/logo1.png" alt="InCoTech logo" style="max-height: 50px;"></a>
+
+      
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i></a>
-        <li class="nav-item">
-          <a class="nav-link" href="html.html"><i class="fab fa-html5"></i> HTML</a>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="html.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fab fa-html5"></i> HTML</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="html.html">Introduction</a>
+            <a class="dropdown-item" href="htmlelement.html">Elements</a>
+            <a class="dropdown-item" href="htmlto.html">Tutorials</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="php.html"><i class="fab fa-php"></i> PHP</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fab fa-php"></i> PHP</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="php.html">Introduction</a>
+            <a class="dropdown-item" href="phpelement.html">Elements</a>
+            <a class="dropdown-item" href="phptot.html">Tutorials</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="C.html"><i class="fab fa-cuttlefish"></i> C++</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fab fa-cuttlefish"></i> C++</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="C.html">Introduction</a>
+            <a class="dropdown-item" href="celement.html">Elements</a>
+            <a class="dropdown-item" href="ctot.html">Tutorials</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="java.html"><i class="fab fa-java"></i> Java</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fab fa-java"></i> Java</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="java.html">Introduction</a>
+            <a class="dropdown-item" href="javaelement.html">Elements</a>
+            <a class="dropdown-item" href="javatot.html">Tutorials</a>
+          </div>
         </li>
       </ul>
     </div>
   </nav>
-         <div class="container-fluid">
-    <div class="row">
-      <!-- Side navigation -->
-      <div class="col-lg-3 col-md-4 d-none d-md-block">
-        <div class="sidenav">
-          <a href="php.html">Introduction</a>
-          <a href="php.html">History</a>
-          <a href="php.html">Elements</a>
-          <a href="php.html">Features</a>
+  
+  <div class="content" style="margin-top: 100px;">
+    <div class="col-lg-9 col-md-8 mx-auto">
+      <div class="main text-justify">
 
-        </div>
-      </div>
-      <div class="col-lg-9 col-md-8">
-        <div class="main">     
-		<section>
-			<main>
-			<h2>Tutorial of PHP</h2>
-			
-            <p>Here's how to get started with PHP:</p>
-            <ol>
-              <li>Install PHP
-                <p>The first step is to install PHP on your server. You can download the latest version of PHP from the official website (<a href="https://www.php.net/downloads.php">https://www.php.net/downloads.php</a>). Follow the instructions to install PHP on your server.</p>
-              </li>
-              <li>Create a PHP file
-                <p>After installing PHP, create a new file with a .php extension in your text editor. You can name this file whatever you like. In this tutorial, we will name our file index.php.</p>
-              </li>
-              <li>Write your first PHP code
-                <p>Once you have created your PHP file, you can start writing PHP code. PHP code is enclosed in PHP tags. The opening PHP tag is &lt;?php and the closing tag is ?&gt;. Here's an example:</p>
-			<div class="container">
-       
-        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-          <video src="imgs/p.mp4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls></video>
-        </div>
-          </div>
-		</section>
-
-		<section>
-			
-			
-			<div class="code-scroll">
-				<pre>
-                    &lt;!DOCTYPE html&gt;
-                    &lt;html&gt;
-                      &lt;head&gt;
-                        &lt;title&gt;PHP Tutorial&lt;/title&gt;
-                      &lt;/head&gt;
-                      &lt;body&gt;
-                        &lt;?php
-                          echo "Hello, World!";
-                        ?&gt;
-                      &lt;/body&gt;
-                    &lt;/html&gt;
+ 
+              <section>
+                
+             
+                <h2>Tutorial of PHP</h2>
           
-				</pre>
-			</div>
-            <p>In this example, we have written a simple PHP code that prints "Hello, World!" on the web page.</p>
-        </li>
-        <li>Running PHP code
-          <p>To run PHP code, you need to upload your PHP file to your server. You can do this using FTP or your hosting control panel. Once you have uploaded your PHP file, you can access it in your web browser by typing the URL of your file in the address bar. For example, if your file is named index.php and it's located in the root directory of your website, you can access it by typing http://www.yourdomain.com/index.php.</p>
-        </li>
-        <li>Variables
-          <p>PHP variables are used to store data. You can create a variable in PHP by using the $ symbol followed by the variable name. Here's an example:</p>
+                <p>Here's how to get started with PHP:</p>
+                <ol>
+                  <li>Install PHP
+                    <p>The first step is to install PHP on your server. You can download the latest version of PHP from the official website (<a href="https://www.php.net/downloads.php">https://www.php.net/downloads.php</a>). Follow the instructions to install PHP on your server.</p>
+                  </li>
+                  <li>Create a PHP file
+                    <p>After installing PHP, create a new file with a .php extension in your text editor. You can name this file whatever you like. In this tutorial, we will name our file index.php.</p>
+                  </li>
+                  <li>Write your first PHP code
+                    <p>Once you have created your PHP file, you can start writing PHP code. PHP code is enclosed in PHP tags. The opening PHP tag is &lt;?php and the closing tag is ?&gt;. Here's an example:</p>
+                  </li>
+                </ol>
+           
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+              <video src="assets/imgs/php.mp4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls></video>
+            </div>
+              
+          <br><br> <!-- added two line breaks for spacing -->
           <div class="code-scroll">
             <pre>
-                &lt;?php
-                $name = "John";
-                echo "Hello, $name!";
-              ?&gt;
-      
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html&gt;
+                          &lt;head&gt;
+                            &lt;title&gt;PHP Tutorial&lt;/title&gt;
+                          &lt;/head&gt;
+                          &lt;body&gt;
+                            &lt;?php
+                              echo "Hello, World!";
+                            ?&gt;
+                          &lt;/body&gt;
+                        &lt;/html&gt;
+              
             </pre>
-        </div>
-        <p>In this example, we have created a variable named $name and assigned it the value "John". We have then used the variable in an echo statement to print "Hello, John!" on the web page.</p>
-    </li>
-    <li>Conditional statements
-      <p>Conditional statements are used to execute different code based on different conditions. In PHP, you can use if, else if, and else statements to create conditional statements. Here's an example:</p>
-<div class="code-scroll">
-  <pre>
-    &lt;?php
-    $age = 25;
-    if ($age &lt; 18) {
-      echo "You are not old enough to vote.";
-    } else {
-      echo "You are old enough to vote.";
-    }
-  ?&gt;
-  
-  </pre>
-</div>
-<p>In this example, we have created a variable named $age and assigned it the value 25.We have then used an if statement to check if $age is less than 18. If it is, we print "You are not old enough to vote." If it's not, we print "You are old enough to vote."</p>
-<p>Step 7: Loops</p>
-<p>Loops are used to execute code repeatedly. In PHP, you can use for, while, and do-while loops to create loops. Here's an example:</p>
-<div class="code-scroll">
-    <pre>
-        <p>&lt;?php
-            for ($i = 1; $i &lt;= 10; $i++) {
-              echo "$i&lt;br&gt;";
-            }
-          ?&gt;</p>
-    
-    </pre>
-  </div>
-  <p>In this example, we have used a for loop to print the numbers from 1 to 10 on separate lines.</p>
-		</section>
-	</main>
-</div>
-            </div>
           </div>
+        </section>
+
+          </div>
+                <p>In this example, we have written a simple PHP code that prints "Hello, World!" on the web page.</p>
+            </li>
+            <li>Running PHP code
+              <p>To run PHP code, you need to upload your PHP file to your server. You can do this using FTP or your hosting control panel. Once you have uploaded your PHP file, you can access it in your web browser by typing the URL of your file in the address bar. For example, if your file is named index.php and it's located in the root directory of your website, you can access it by typing http://www.yourdomain.com/index.php.</p>
+            </li>
+            <li>Variables
+              <p>PHP variables are used to store data. You can create a variable in PHP by using the $ symbol followed by the variable name. Here's an example:</p>
+              <div class="code-scroll">
+                <pre>
+                    &lt;?php
+                    $name = "John";
+                    echo "Hello, $name!";
+                  ?&gt;
           
-          <button id="preview-btn"><a class="preview-link">Preview</a></button>
+                </pre>
+            </div>
+            <p>In this example, we have created a variable named $name and assigned it the value "John". We have then used the variable in an echo statement to print "Hello, John!" on the web page.</p>
+        </li>
+        <li>Conditional statements
+          <p>Conditional statements are used to execute different code based on different conditions. In PHP, you can use if, else if, and else statements to create conditional statements. Here's an example:</p>
+    <div class="code-scroll">
+      <pre>
+        &lt;?php
+        $age = 25;
+        if ($age &lt; 18) {
+          echo "You are not old enough to vote.";
+        } else {
+          echo "You are old enough to vote.";
+        }
+      ?&gt;
+      
+      </pre>
+    </div>
+    <p>In this example, we have created a variable named $age and assigned it the value 25.We have then used an if statement to check if $age is less than 18. If it is, we print "You are not old enough to vote." If it's not, we print "You are old enough to vote."</p>
+    <p>Step 7: Loops</p>
+    <p>Loops are used to execute code repeatedly. In PHP, you can use for, while, and do-while loops to create loops. Here's an example:</p>
+    <div class="code-scroll">
+        <pre>
+            <p>&lt;?php
+                for ($i = 1; $i &lt;= 10; $i++) {
+                  echo "$i&lt;br&gt;";
+                }
+              ?&gt;</p>
+        
+        </pre>
+      </div>
+      <p>In this example, we have used a for loop to print the numbers from 1 to 10 on separate lines.</p>
+        </section>
+        </div>
+   
+    </div>
+                </div>
+              </div>
+            </div>
+              
           
 <script>
   const previewBtn = document.getElementById('preview-btn');
