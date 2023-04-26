@@ -13,47 +13,57 @@
 
 <body>
   <!-- Navigation bar -->
-<nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand" href="index.html"><img src="imgs/logo1.png" alt="InCoTech logo" style="max-height: 50px;"></a>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="index.html"><img src="imgs/logo1.png" alt="InCoTech logo" style="max-height: 50px;"></a>
 
-    
+      
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i></a>
-        <li class="nav-item">
-          <a class="nav-link" href="html.html"><i class="fab fa-html5"></i> HTML</a>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="html.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fab fa-html5"></i> HTML</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="html.html">Introduction</a>
+            <a class="dropdown-item" href="htmlelement.html">Elements</a>
+            <a class="dropdown-item" href="htmlto.html">Tutorials</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="php.html"><i class="fab fa-php"></i> PHP</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fab fa-php"></i> PHP</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="php.html">Introduction</a>
+            <a class="dropdown-item" href="phpelement.html">Elements</a>
+            <a class="dropdown-item" href="phptot.html">Tutorials</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="C.html"><i class="fab fa-cuttlefish"></i> C++</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fab fa-cuttlefish"></i> C++</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="C.html">Introduction</a>
+            <a class="dropdown-item" href="celement.html">Elements</a>
+            <a class="dropdown-item" href="ctot.html">Tutorials</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="java.html"><i class="fab fa-java"></i> Java</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fab fa-java"></i> Java</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="java.html">Introduction</a>
+            <a class="dropdown-item" href="javaelement.html">Elements</a>
+            <a class="dropdown-item" href="javatot.html">Tutorials</a>
+          </div>
         </li>
       </ul>
     </div>
   </nav>
-  <div class="container-fluid">
-    <div class="row">
-      <!-- Side navigation -->
-      <div class="col-lg-3 col-md-4 d-none d-md-block">
-        <div class="sidenav">
-          <a href="#Introduction">Introduction</a>
-          <a href="#History">History</a>
-          <a href="#Elements">Elements</a>
-          <a href="#Features">Features</a>
-          <a href="phptot.html">Tutorials</a>
-        </div>
-      </div>
+  
               <!-- Main content -->
-              <div class="col-lg-9 col-md-8">
-                <div class="main">
-                  <section class="section" id="Introduction">
+              <div class="content">
+                <div class="col-lg-9 col-md-8 mx-auto">
+                  <div class="main text-justify">
+                      <section class="section" id="Introduction">
                     <h1>PHP</h1>
                     <h2>Introduction</h2>
                     <p>PHP (Hypertext Preprocessor) is a popular, open-source server-side scripting language that is widely used for web development. It was first created in 1994 by Rasmus Lerdorf as a set of Common Gateway Interface (CGI) scripts to track visits to his personal website. Over the years, PHP has evolved into a powerful language that is used by millions of websites and web applications around the world.</p>
@@ -67,8 +77,9 @@
                   <div style="height: 100px;"></div> <!-- Add some space between sections -->
                   <!--video-->
                   <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-                    <video src="imgs/code.mp4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls></video>
+                    <video src="assets/imgs/code.mp4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls></video>
                   </div>
+                  <p><a href="https://youtu.be/Tkg8FdwfvlU">https://youtu.be/Tkg8FdwfvlU</a></p>
                   <div style="height: 100px;"></div> <!-- Add some space between sections -->
                   <hr style="border: 1px solid black;">
                   <section class="section" id="History">
@@ -81,39 +92,9 @@
 <p>PHP 4 was released in 2000, which further improved the language and added support for sessions, cookies, and other essential web development features. In 2004, PHP 5 was released, which included significant improvements to the language and added support for OOP programming.</p>
 <p>Today, PHP is one of the most widely used programming languages in the world, with millions of websites and web applications built using PHP. It continues to evolve and improve, with new features and improvements added with each new release.</p>
                   </section>
-                  <hr style="border: 1px solid black;">
-                  <section class="section" id="Elements">
-                    <h2>elements</h2>
-                    <p>Here are some of the key elements of PHP:</p>
-                    <ol>
-                    <li><p>Variables: Used to store data values that can be accessed and manipulated throughout the code.</p></li>
-                    <li><p>Operators: Used to perform operations on data values, such as arithmetic and comparison operations.</p></li>
-                    <li><p>Control structures: Used to control the flow of program execution, such as if/else statements and loops.</p></li>
-                    <li><p>Functions: Used to encapsulate a set of instructions and perform a specific task.</p></li>
-                    <li><p>Arrays: Used to store multiple values in a single variable.</p></li>
-                    <li><p>Classes and objects: Used to implement object-oriented programming concepts in PHP.</p></li>
-                    <li><p>File handling functions: Used to read from and write to files on the server.</p></li>
-                    <li><p>Database connectivity functions: Used to connect to and interact with databases, such as MySQL, Oracle, and PostgreSQL.</p></li>
-                    <li><p>Regular expressions: Used to search for and manipulate text patterns within strings.</p></li>
-                    <li><p>Error handling functions: Used to handle errors and exceptions that may occur during program execution.</p></li>
-                    </ol>
-                    <p>These are just some of the many elements available in PHP, and they can be used in combination to create powerful and flexible web applications.</p>
-                  </section>
-                  <hr style="border: 1px solid black;">
-                  <section class="section" id="Features">
-                    <h2>Features</h2>
-                    <ol>
-                        <li>Server-side scripting: PHP is a server-side scripting language, which means that it runs on the server rather than the client's browser. This allows PHP to generate dynamic web pages and handle server-side tasks such as processing forms and interacting with databases.</li>
-                        <li>Open-source: PHP is open-source software, which means that it is free to use and developers can modify the code to suit their needs. This has led to a large and active community of developers who contribute to the language by creating libraries, frameworks, and other tools.</li>
-                        <li>Cross-platform compatibility: PHP can run on a wide range of platforms, including Windows, macOS, Linux, and Unix. This makes it a flexible language that can be used in a variety of environments.</li>
-                        <li>Easy to learn: PHP is a relatively easy language to learn, especially for developers who are already familiar with HTML and CSS. PHP code can be embedded directly into HTML, which makes it easy to create dynamic web pages with interactive content.</li>
-                        <li>Database support: PHP can interact with a variety of databases, including MySQL, Oracle, and PostgreSQL. This makes it easy to create dynamic, database-driven websites and web applications.</li>
-                        <li>Extensive library support: PHP has a large and growing library of functions and extensions that developers can use to extend the language and add new functionality to their applications.</li>
-                        <li>Object-oriented programming support: PHP supports object-oriented programming (OOP), which allows developers to write more complex and powerful applications. OOP allows developers to organize their code into reusable modules, making it easier to maintain and update their applications over time.</li>
-                        <li>Security: PHP includes built-in security features that help protect against common security threats, such as cross-site scripting (XSS) and SQL injection. Additionally, the PHP community is constantly working to improve the language's security features and identify and fix any vulnerabilities that are discovered.</li>
-                        </ol>
-                  </section>
+                  
                 </div>
+              </div>
               </div>
               
               <footer style="background-color: #f4f4f4; padding: 10px; text-align: center;">
